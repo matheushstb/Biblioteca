@@ -5,52 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca ETEC Ermelinda</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Biblioteca de livros virtuais da ETEC Ermelinda</h1>
-        <nav>
-            <ul>
-                <li><a href="trad.html">Tradução</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="livros.html">Livros</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Biblioteca Virtual da ETEC Ermelinda</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="livros.html"><i class="fas fa-book"></i> Livros</a></li>
+                    <li><a href="trad.html"><i class="fas fa-language"></i> English</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
  
     <main>
         <section class="sobre">
             <h2>Sobre a Biblioteca</h2>
             <p>Bem-vindo à nossa Biblioteca Virtual! Aqui você encontrará uma vasta coleção de livros para todos os gostos. Nossa missão é promover o conhecimento e a leitura, proporcionando acesso fácil a uma grande variedade de títulos. Navegue pelas nossas categorias e descubra novos mundos!</p>
+            <p>Destaque para os livros disponíveis em formato PDF, que podem ser baixados diretamente para seu dispositivo.</p>
         </section>
  
         <section class="destacados">
             <h2>Livros em Destaque</h2>
-            <div class="livro-destaque">
-                <img src="img/est/est1.jpg" alt="Capa do Livro">
-                <h3>O sol é para todos</h3>
-                <p>Narrado por Scout Finch, uma criança do sul dos Estados Unidos na década de 1930, o livro aborda o racismo...</p>
-            </div>
-            <div class="livro-destaque">
-                <img src="img/filo/filo1.jpg" alt="Capa do Livro">
-                <h3>Fundamentos Filosóficos da edução</h3>
-                <p>José Antônio Vasconcelos explora a relação entre filosofia e educação, abordando correntes filosóficas como idealismo...</p>
-            </div>
-            <div class="livro-destaque">
-                <img src="img/nasc/nasc1.jpg" alt="Capa do Livro">
-                <h3>Chapadão do Bugre</h3>
-                <p>Mário Palmério retrata a vida no sertão brasileiro...</p>
-            </div>
-            <div class="livro-destaque">
-                <img src="img/prog/prog1.jpg" alt="Capa do Livro">
-                <h3>Programming language processors in java</h3>
-                <p>O livro ensina a criar compiladores e interpretadores em Java, abordando análise léxica...</p>
+            <div class="destaques-container">
+                <div class="livro-destaque">
+                    <img src="img/est/est1.jpg" alt="Capa do Livro O sol é para todos">
+                    <div class="livro-info">
+                        <h3>O sol é para todos</h3>
+                        <p>Narrado por Scout Finch, uma criança do sul dos Estados Unidos na década de 1930, o livro aborda o racismo e a injustiça social.</p>
+                        <button type="button">
+                            <a href="pdf/O Sol e para Todos - Harper Lee.pdf">
+                                <i class="fas fa-download"></i> Baixar PDF
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="livro-destaque">
+                    <img src="img/filo/filo2.jpg" alt="Capa do Livro Colapso">
+                    <div class="livro-info">
+                        <h3>Colapso</h3>
+                        <p>Jared Diamond analisa por que algumas civilizações desapareceram, destacando fatores como destruição ambiental e decisões políticas ruins.</p>
+                        <button type="button">
+                            <a href="pdf/collapse-jared-diamond.pdf">
+                                <i class="fas fa-download"></i> Baixar PDF
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="livro-destaque">
+                    <img src="img/est/est3.jpg" alt="Capa do Livro A teoria de tudo">
+                    <div class="livro-info">
+                        <h3>A teoria de tudo</h3>
+                        <p>Jane Hawking explora a vida e o trabalho de Stephen Hawking, abordando conceitos complexos da cosmologia de forma acessível.</p>
+                        <button type="button">
+                            <a href="pdf/a_teoria_de_tudo_-_jane_hawking.pdf">
+                                <i class="fas fa-download"></i> Baixar PDF
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="livro-destaque">
+                    <img src="img/filo/filo3.jpg" alt="Capa do Livro O Despertar da Águia">
+                    <div class="livro-info">
+                        <h3>O Despertar da Águia</h3>
+                        <p>Leonardo Boff explora os conceitos de "sim-bólico" e "dia-bólico" para analisar a construção da realidade e o autoconhecimento.</p>
+                        <button type="button">
+                            <a href="pdf/leonardo-boff-o-despertar-da-aguia_compress.pdf">
+                                <i class="fas fa-download"></i> Baixar PDF
+                            </a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
  
     <footer>
-        <p>&copy; 2025 Biblioteca Virtual - Todos os direitos reservados</p>
+        <p>&copy; 2025 Biblioteca Virtual ETEC Ermelinda - Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
